@@ -6,11 +6,11 @@ A project that combines Strava cycling data with an ESP8266-based LED matrix dis
 
 ## 🚲 Overview
 
-This project creates a smart LED display that shows cycling gear statistics from Strava, perfect for monitoring your bike's mileage and other metrics in real-time. Features include:
-- Real-time mileage display
-- Smooth animations for updates
+This project creates a smart LED display that shows cycling gear statistics from Strava, perfect for monitoring your bike's mileage and other metrics. Features include:
+- One-time display of current mileage at startup
+- Smooth animations for value updates
 - Web interface for remote restart
-- Automatic refresh of Strava data
+- Display of bike name and IP address at startup
 - Fallback to last known distance when offline
 
 ## 🛠 Hardware Setup
@@ -178,7 +178,7 @@ Once running, you can access the web interface:
 - The system currently supports one bike at a time
 - Gear ID must be manually configured in the credentials file
 - Regular Strava API rate limits apply
-- "The display updates every minute with new data from Strava" - disabled
+- The display shows data at startup and can be refreshed via web interface
 - Last known distance is stored and displayed during connection issues
 
 ## 📜 License
