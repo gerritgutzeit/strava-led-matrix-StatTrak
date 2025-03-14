@@ -1,4 +1,4 @@
-# StravaPi LED Matrix Display
+# Strava LED Matrix Display Bike Gear Stats
 
 A project that combines Strava cycling data with an ESP8266-based LED matrix display to show real-time gear statistics. The display shows your bike's mileage and features smooth animations for updates.
 
