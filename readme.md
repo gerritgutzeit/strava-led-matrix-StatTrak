@@ -84,10 +84,17 @@ The hardware setup consists of a D1 Mini (ESP8266) connected to four MAX7219 LED
 1. Download MicroPython firmware for ESP8266 from the [official website](https://micropython.org/download/esp8266/)
 2. Flash MicroPython to your D1 Mini:
    ```bash
+   # For Linux/macOS:
    # First, erase the flash
-   esptool.py --port /dev/ttyUSB0 erase_flash
+   esptool.py --port /dev/tty* erase_flash
    # Then, flash MicroPython
-   esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash --flash_size=detect 0 esp8266-VERSION.bin
+   esptool.py --port /dev/tty* --baud 460800 write_flash --flash_size=detect 0 esp8266-VERSION.bin
+
+   # For Windows:
+   # First, erase the flash
+   esptool.py --port COM* erase_flash
+   # Then, flash MicroPython
+   esptool.py --port COM* --baud 460800 write_flash --flash_size=detect 0 esp8266-VERSION.bin
    ```
 
 ### 3. Configure the Project
@@ -124,12 +131,12 @@ The hardware setup consists of a D1 Mini (ESP8266) connected to four MAX7219 LED
 
 Upload all required files to the D1 Mini:
 ```bash
-# Replace /dev/ttyUSB0 with your port (Windows: COMx)
-ampy --port /dev/ttyUSB0 put d1_mini_gear_check.py
-ampy --port /dev/ttyUSB0 put credentials.py
-ampy --port /dev/ttyUSB0 put max7219.py
-ampy --port /dev/ttyUSB0 put custom_font.py
-ampy --port /dev/ttyUSB0 put boot.py
+# Replace /dev/ttyUSB* with your port (Windows: COMx)
+ampy --port /dev/ttyUSB* put d1_mini_gear_check.py
+ampy --port /dev/ttyUSB* put credentials.py
+ampy --port /dev/ttyUSB* put max7219.py
+ampy --port /dev/ttyUSB* put custom_font.py
+ampy --port /dev/ttyUSB* put boot.py
 
 ```
 
