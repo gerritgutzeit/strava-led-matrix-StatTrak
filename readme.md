@@ -129,13 +129,13 @@ ampy --port /dev/ttyUSB* put boot.py
 3. The display will show:
    - Initial startup animation
    - Current bike mileage from Strava
-   - Periodic updates with smooth animations
+   - Periodic updates with smooth animations - Disabled
    - Scrolling bike name every minute
 
 ### 6. Web Interface
 
 Once running, you can access the web interface:
-1. The D1 Mini will display its IP address on startup
+1. The D1 Mini will display its IP address on startup - Disabled, need to update just one time and if IP changed.
 2. Visit `http://<device-ip>/` in your browser
 3. You can view current distance and restart the device if needed
 
@@ -150,7 +150,7 @@ Once running, you can access the web interface:
 
 ## 🚀 Future Improvements
 
-- [ ] Web interface for dynamic gear selection
+- [ ] Web interface for dynamic gear selection - I ran into RAM issues while trying 
 - [ ] Support for multiple bikes/devices
 - [ ] Enhanced user configuration options
 - [ ] Additional display modes and statistics
