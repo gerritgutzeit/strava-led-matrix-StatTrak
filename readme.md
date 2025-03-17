@@ -35,24 +35,6 @@ The hardware setup consists of a D1 Mini (ESP8266) connected to four MAX7219 LED
 | CLK           | D5         |
 
 
-
-## 🛠 Hardware Requirements
-
-- ESP8266 D1 Mini Board
-- 4x MAX7219 LED Matrix Modules (chained)
-- USB Cable for power and programming
-- Basic wiring/jumper cables
-
-## 📡 Wiring Configuration
-
-| LED Matrix Pin | D1 Mini Pin |
-|---------------|-------------|
-| VCC           | 5V         |
-| GND           | Ground     |
-| DIN           | D7         |
-| CS            | D8         |
-| CLK           | D5         |
-
 ## 💻 Software Components
 
 ### Core Files
